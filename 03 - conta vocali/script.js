@@ -19,7 +19,8 @@ function printVowels(word) {
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-
+const result = printVowels(word);
+console.log(result);
 
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
