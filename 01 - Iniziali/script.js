@@ -15,6 +15,7 @@ function printName(names) {
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-
+const initials = printName(names);
+console.log(initials);
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
