@@ -18,7 +18,15 @@ function printInitials(names, letter) {
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-
+//Chiedo all'utente di inserire una lettera
+const letter = prompt("Inserisci una lettera per filtrare i nomi");
+//Condizione per verificare che inserisca soltanto una lettera
+if (letter.length === 1) {
+    const initialNames = printInitials(names, letter);
+    console.log(initialNames);
+} else {
+    console.log("Per favore, inserisci solo una lettera.");
+}
 
 
 
