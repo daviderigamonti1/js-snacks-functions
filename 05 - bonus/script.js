@@ -25,7 +25,8 @@ function hello(name) {
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-
+const sayHello = hello(name);
+console.log(sayHello);
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
