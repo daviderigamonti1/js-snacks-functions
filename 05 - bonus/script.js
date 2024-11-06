@@ -9,7 +9,20 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-
+function hello(name) {
+    //Inizializzo le variabili che mi serviranno per fare il saluto
+    let currentTime = new Date().getHours();
+    let salutation;
+    //Condizione per verificare l'ora del giorno e di conseguenza modificare il saluto
+    if (currentTime < 13) {
+        salutation = "Buongiorno";
+    } else if (currentTime < 17) {
+        salutation = "Buon pomeriggio";
+    } else {
+        salutation = "Buonasera";
+    }
+    return `${salutation} ${name}`;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
